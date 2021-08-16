@@ -7,7 +7,7 @@ int main() {
 
     scanf("%d",&n); //numero de posicoens do vetor
 
-    int *vetor = (int*)malloc(n*sizeof(int)); //alocacao dinamica do vetor ->tratado como vetor comum
+    int *vetor = (int*)malloc(n*sizeof(int)); //alocacao dinamica do vetor ->tratado como vetor comum // ponteiro = vetor
 
 
     for(int i=0;i<n;i++)
