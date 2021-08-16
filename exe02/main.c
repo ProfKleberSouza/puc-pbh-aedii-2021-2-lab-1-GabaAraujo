@@ -20,5 +20,6 @@ int main() {
     printf("MENOR = %d",menor(vetor,n));
     printf("\n");
 
+    free(vetor);
   return(0);
 }
