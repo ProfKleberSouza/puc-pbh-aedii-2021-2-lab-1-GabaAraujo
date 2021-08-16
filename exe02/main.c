@@ -3,16 +3,22 @@
 
 int main() {
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+    int n;
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+    scanf("%d",&n); //numero de posicoens do vetor
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+    int *vetor = (int*)malloc(n*sizeof(int)); //alocacao dinamica do vetor ->tratado como vetor comum
+
+
+    for(int i=0;i<n;i++)
+    {
+      scanf("%d",&vetor[i]); //alimenta o vetor
+
+
+    }
+
+    printf("MENOR = %d",menor(vetor,n));
+    printf("\n");
 
   return(0);
 }
