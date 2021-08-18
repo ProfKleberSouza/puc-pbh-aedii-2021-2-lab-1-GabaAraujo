@@ -3,16 +3,32 @@
 
 int main() {
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  int n=0;
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  scanf("%d",&n);
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  int *vetor = (int*)malloc(n*sizeof(int)); //alocacao dinamica do vetor ->tratado como vetor comum // ponteiro = vetor
 
-  return(0);
+  for(int i=0;i<n;i++)
+  {
+    scanf("%d",&vetor[i]); //alimenta o vetor
+
+  }
+
+
+  int maior,menor;
+
+  int *ponteiro_maior;
+  ponteiro_maior = &maior; //aponta pro maior
+
+  int *ponteiro_menor;
+  ponteiro_menor = &menor; //aponta pro menor - &representa a posição
+
+
+   menor_maior(vetor,n,ponteiro_maior,ponteiro_menor); //não manda com asterisco porque manda a posicao de memoria
+
+  printf("MENOR = %d\n",menor);
+  printf("MAIOR = %d", maior);
+  printf("\n");
+
 }
