@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "functions.h"
 
 int main() {
@@ -30,5 +31,7 @@ int main() {
   printf("MENOR = %d\n",menor);
   printf("MAIOR = %d", maior);
   printf("\n");
+  
+  free(vetor);
 
 }
