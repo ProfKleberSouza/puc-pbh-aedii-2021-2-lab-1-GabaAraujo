@@ -1,7 +1,17 @@
 
 #include "functions.h"
+#include "string.h"
+#include "stdio.h"
 
-int somar(int n1, int n2){
+void inverte(char texto[]){
 
-    return n1+n2;
+    for(int i=strlen(texto);i>=0;i--) //rpete pelo tamanho da string -> tem de estar igual pra validar ate a ultima
+    {
+
+        printf("%c",texto[i]);
+
+    }
+   
+    printf("\n");
+
 }
