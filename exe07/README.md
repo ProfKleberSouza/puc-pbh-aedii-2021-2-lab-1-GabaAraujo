@@ -2,9 +2,9 @@
 
 Crie uma função recursiva que calcule o MDC. Para calcular o valor siga as seguintes definições recursivas:
 
- - mdc(x, y) = y, se x >= y e x mod y = 0
+ - mdc(x, y) = y, se x >= y e x % y = 0 
  - mdc(x, y) = mdc(y, x), se x < y
- - mdc(x, y) = mdc(y, x mod y), caso contrário
+ - mdc(x, y) = mdc(y, x % y), caso contrário
 
 ## Especificação
 

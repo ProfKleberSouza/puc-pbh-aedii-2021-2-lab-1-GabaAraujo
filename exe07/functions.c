@@ -1,7 +1,25 @@
 
 #include "functions.h"
+#include <stdio.h>
 
-int somar(int n1, int n2){
+int mdc(int x, int y){
 
-    return n1+n2;
+    int resultado ;
+
+
+    if(x < y)
+    {
+        resultado = mdc(y,x);
+    }
+    else if ( x % y == 0) // x>= y
+    {
+        resultado = y;
+    }
+    else 
+    {
+        resultado = mdc(y,x%y);
+    }
+
+    return resultado;
+    
 }
