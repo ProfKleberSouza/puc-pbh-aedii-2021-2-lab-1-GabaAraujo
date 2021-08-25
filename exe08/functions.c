@@ -7,7 +7,7 @@ int cont=0;
 
 bool is_palindromo(char texto[]){
 
-if(cont == strlen(texto)-1)
+if(cont == strlen(texto)-1) //por causa do strlen
 {
     return true;
 }
