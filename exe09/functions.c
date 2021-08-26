@@ -4,7 +4,7 @@
 #include <string.h>
 
 void
-placar_possiveis_recursivo (char texto[], int m, int n, int pos)
+placar_possiveis_recursivo (char texto[], int m, int n, int pos) 
 {
 
   if (m == 0 && n == 0) //vai parar quando não existir mais numeros a serem colocados
