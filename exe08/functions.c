@@ -13,7 +13,7 @@ if(cont == strlen(texto)-1) //por causa do strlen
 }
 
 
-if(texto[cont] == texto[strlen(texto)-2-cont]) //fgets pega o \n
+if(texto[cont] == texto[strlen(texto)-1-cont]) //fgets pega o \n
 {
     cont++;
     is_palindromo(texto);
