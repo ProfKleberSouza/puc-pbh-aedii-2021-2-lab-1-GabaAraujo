@@ -24,4 +24,7 @@ bool resultado = is_palindromo(texto);
 
 
     printf("\n");
+
+
+    return(0);
 }
