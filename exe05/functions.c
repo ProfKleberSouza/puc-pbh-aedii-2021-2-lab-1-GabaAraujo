@@ -5,13 +5,20 @@
 
 void inverte(char texto[]){
 
-    for(int i=strlen(texto)-1;i>=0;i--) //rpete pelo tamanho da string -> tem de estar igual pra validar ate a ultima
-    {
+  int size = strlen(texto);
 
-        printf("%c",texto[i]);
-
+    for(int i = 0; i < size / 2; i++) {
+       char tmp = texto[i]; //armazena o character inicial
+       texto[i] = texto[size - i - 1]; //Troca o character da ponta oposta
+       texto[size - i - 1] = tmp; //Armazena o character inicial no buffer
     }
+    printf("%s", texto);
    
+
+
+
+
+
     printf("\n");
 
 }

@@ -5,11 +5,9 @@ int main() {
 
   char texto[100];
 
-
   fgets(texto,100,stdin);
 
-
- inverte(texto);
+  inverte(texto);
     
     return(0);
 
