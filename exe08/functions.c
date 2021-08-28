@@ -3,9 +3,9 @@
 #include <stdbool.h>
 #include "string.h"
 #include <stdio.h>
-int cont=0;
 
-bool is_palindromo(char texto[]){
+
+bool is_palindromo_rec(char texto[], int cont){
 
 if(cont == strlen(texto)-1) //por causa do strlen
 {
@@ -15,8 +15,7 @@ if(cont == strlen(texto)-1) //por causa do strlen
 
 if(texto[cont] == texto[strlen(texto)-1-cont]) //fgets pega o \n
 {
-    cont++;
-    is_palindromo(texto);
+    is_palindromo_rec(texto,cont+1);
 }
 else
 {
@@ -25,7 +24,12 @@ else
 
 
 
-
-
     
+}
+
+
+bool is_palindromo(char texto[])
+{
+    is_palindromo_rec(texto,0);
+
 }
