@@ -9,15 +9,19 @@ char texto[100];
 
 
 fgets(texto,100,stdin);
-  
-  if(strlen(texto) == '\n')
-  {
-      texto[strlen(texto)] = '\0';
-  }
-  if(strlen(texto) == '\r')
-  {
-      texto[strlen(texto)] - '\0';
-  }
+
+
+
+if(texto[strlen(texto)-1] == '\n')
+{
+    texto[strlen(texto)-1] = '\0';
+}
+if(texto[strlen(texto)-1] == '\r')
+{
+    texto[strlen(texto)-1] = '\0';
+}
+ 
+
 
 
 
